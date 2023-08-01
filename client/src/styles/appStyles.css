@@ -1,0 +1,79 @@
+.container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .app-wrapper {
+  padding: 3em;
+  border-radius: 50px;
+  box-shadow: 0 0 0.5em 0.2em rgba(0, 0, 0, 0.2);
+}
+.container .app-wrapper .files-title {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+.container .app-wrapper .title {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.container .app-wrapper .yandex-btn {
+  margin-bottom: 2em;
+  border-radius: 50px;
+  border: 1px solid black;
+  background: black;
+  color: white;
+}
+.container .app-wrapper .yandex-btn:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+.container .app-wrapper .files-list .file-item {
+  padding: 0.5em;
+  border-radius: 50px;
+}
+.container .app-wrapper .files-list .file-item .link {
+  border-radius: 50px;
+  display: block;
+  background: black;
+  text-decoration: none;
+  color: white;
+  border: 1px solid black;
+  text-align: center;
+  transition: 0.1s;
+}
+.container .app-wrapper .files-list .file-item .link:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+.container .app-wrapper .files-list .file-item:nth-child(2n+1) {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.modal-window .modal-dialog {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+}
+.modal-window .modal-dialog .modal-content {
+  width: 800px;
+  padding: 1em;
+  border-radius: 25px;
+}
+.modal-window .modal-dialog .modal-content .col-1 {
+  width: 35%;
+}
+.modal-window .modal-dialog .modal-content .col-2 {
+  width: 50%;
+}
+.modal-window .modal-dialog .modal-content .col-3 {
+  width: 15%;
+}
+.modal-window .modal-dialog .modal-content .add-btn {
+  margin-top: 1em;
+}
+
+/*# sourceMappingURL=appStyles.css.map */

@@ -24,6 +24,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -42,6 +43,7 @@
       <option name="presentableId" value="Default" />
       <updated>1690836083433</updated>
       <workItem from="1690836085475" duration="16818000" />
+      <workItem from="1690883403902" duration="4188000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,94 @@
+.container{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .app-wrapper{
+    padding: 3em;
+    border-radius: 50px;
+    box-shadow: 0 0 .5em 0.2em rgba(0, 0, 0, 0.2);
+
+    .files-title{
+      font-size: 1.5em;
+      margin-bottom: .5em;
+    }
+    .title{
+      font-size: 2em;
+      margin-bottom: .5em;
+      text-align: center;
+    }
+    .yandex-btn{
+      margin-bottom: 2em;
+      border-radius: 50px;
+      border: 1px solid black;
+      background: black;
+      color: white;
+
+      &:hover{
+        background: white;
+        color: black;
+        border: 1px solid black;
+      }
+    }
+    .files-list{
+
+
+      .file-item{
+        padding: .5em;
+        border-radius: 50px;
+
+        .link{
+          border-radius: 50px;
+          display: block;
+          background: black;
+          text-decoration: none;
+          color: white;
+          border: 1px solid black;
+          text-align: center;
+          transition: .1s;
+
+          &:hover{
+            background: white;
+            color: black;
+            border: 1px solid black;
+          }
+        }
+
+        &:nth-child(2n + 1){
+          background: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+}
+
+.modal-window{
+
+  .modal-dialog{
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+
+    .modal-content{
+      width: 800px;
+      padding: 1em;
+      border-radius: 25px;
+
+      .col-1{
+        width: 35%;
+      }
+      .col-2{
+        width: 50%;
+      }
+      .col-3{
+        width: 15%;
+      }
+
+      .add-btn{
+        margin-top: 1em;
+      }
+    }
+  }
+
+}

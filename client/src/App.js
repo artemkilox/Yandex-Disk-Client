@@ -1,8 +1,9 @@
 import YandexDiskUpload from "./components/YandexDiskUpload";
 import {BrowserRouter} from "react-router-dom";
 import {useState} from "react";
-import {Button} from "react-bootstrap";
+import {Button, Col, Container, Row} from "react-bootstrap";
 import {useEffect} from "react";
+import './styles/appStyles.css'
 
 function App() {
 
@@ -25,24 +26,61 @@ function App() {
 
     const [show, setShow] = useState(false)
 
+
   return (
       <BrowserRouter>
-          <Button
-            onClick={() => setShow(true)}
+          <Container
+            className="container"
           >
-              Загрузить файлы на Яндекс.Диск
-          </Button>
-          <YandexDiskUpload
-              show={show}
-              onHide={() => setShow(false)}
-          />
-          {filesOnDisk ?
-            filesOnDisk.map(file =>
-                <div
-                    key={file.resource_id}
-                >{file.name}</div>
-            ) : <div></div>
-          }
+              <div
+                  className="app-wrapper"
+              >
+                  <div
+                    className="title"
+                  >
+                      Загрузка файлов на Яндекс.Диск
+                  </div>
+                  <YandexDiskUpload
+                      show={show}
+                      onHide={() => setShow(false)}
+                  />
+                  <Button
+                      className="yandex-btn"
+                      onClick={() => setShow(true)}
+                  >
+                      Загрузить файлы на Яндекс.Диск
+                  </Button>
+                  <div
+                    className="files-title"
+                  >
+                      Файлы на диске:
+                  </div>
+                  <div
+                      className="files-list"
+                  >
+                      {filesOnDisk ?
+                          filesOnDisk.map(file =>
+                              <Row
+                                  className="file-item"
+                                  key={file.resource_id}
+                              >
+                                  <Col>
+                                      {file.name}
+                                  </Col>
+                                  <Col>
+                                      <a
+                                          className="link"
+                                          href={file.file}
+                                      >
+                                          Скачать
+                                      </a>
+                                  </Col>
+                              </Row>
+                          ) : <div></div>
+                      }
+                  </div>
+              </div>
+          </Container>
       </BrowserRouter>
   );
 }
